@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/estilos.css">
+
+
+    <title>QUEST FORMULÁRIO</title>
+</head>
+<body>
+    <main>
+        <section class="container">
+            <div class="info">
+                <h1 class="doubt">FICOU COM DÚVIDA? <br> NOS MANDE UMA MENSAGEM!</h1>
+
+                <p class="solution">caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de 24h.</p>
+            </div>
+
+            <form class="form" action="#" onsubmit = "return validateForm()">
+
+              <input class="input input-info" type="text" name="name" id="name" placeholder="Nome completo *">
+              <span class="span" id="nameError">campo obrigatório</span>
+
+              <input class="input input-info" type="email" name="email" id="email" placeholder="Email *">
+              <span class="span" id="emailError">campo obrigatório</span>
+
+              <input class="input input-info" type="tel" name="phone" id="phone" placeholder="Telefone *">
+              <span class="span" id="phoneError">campo obrigatório</span>
+
+              <textarea class="message" name="message" id="messageError" placeholder="Mensagem *" cols="30" rows="10"></textarea>
+
+              <h4>*campos obrigatórios</h4>
+
+              <button class="btn-send" type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="./src/js/formulario.js"></script>
+
+</body>
+</html>
+

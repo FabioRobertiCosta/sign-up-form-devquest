@@ -1,0 +1,110 @@
+html{
+    background-image: url(../imagens/bg-repeat.jpg);
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.container .info {
+     color: #ffffff;
+}
+
+.container .info .doubt {
+    font-weight: 900;
+}
+
+.container .info .solution {
+    width: 310px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.container .form {
+    background-color: #ffffff;
+    width: 340px;
+    height: 378px;    
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container .form .input {
+    width: 290px;
+    height: 35px;
+    font-weight: 700;
+    font-size: 15px;
+   
+}
+
+.container .form .message {
+    width: 290px;
+    height: 100px;
+    margin-bottom: 1px;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.container .form .message::placeholder {
+    color: #a8a8a8;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 9px 11px;
+}
+
+.container .form .span {
+    margin-right: 220px;
+    margin-bottom: 15px;
+    color: #f52e2e;
+    font-size: 8px;
+    font-weight: 400;
+    visibility: hidden;
+}
+
+h4{
+    margin-right: 130px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.container .form .btn-send {
+    width: 298px;
+    height: 41px;
+    background-color: #3ccc87;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.required-fields {
+    color: #f52e2e;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    margin-right: 210px;
+    opacity: 0;
+}
+
+
+.unverified-fields {
+    border: 1px solid #f52e2e;
+    border-radius: 5px;
+}
+
+unverified-fields  + .span{
+margin-right: 220px;
+margin-bottom: 15px;
+color: #f52e2e;
+font-size: 8px;
+font-weight: 400;
+visibility: visible;
+}
